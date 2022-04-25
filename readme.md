@@ -19,6 +19,27 @@ Porque estou fazendo um cursinho online de node então tenho um pouco mais de fa
 - abrir o index html com o live server
 - Assim que a page carregar os métodos getMaterials(), addNewMaterials() e updateNewUser() serão executados
 
+
+## Explicando métodos 
+O método addNewMaterials() vai adicionar  
+    ``
+    name: "Suco de uva",
+    quantity: 2,
+    user: "Fulano"
+
+    ``
+
+O updateNewUser() vai mudar o usuário conforme o id passado na url definida na função do método
+``
+const UpdateUser = {
+    name:"Pão",
+    quantity:20,
+    user:"Ciclano"
+}
+
+``
+
+
 ## Dificuldades
 Enquanto isso está tudo muito manual para inserir um novo dado na api, então tentei fazer isso de uma forma mais dinâmica colocando inputs no index e um button para cadastrar, eu pegava o value do input e parava o submit com o stoppropagation, mais algo ali estava se perdendo que acabou dando erro no método e o axios não entendia a requisição.
 
